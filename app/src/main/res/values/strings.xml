@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Coba Recycler View</string>
+
+    <string name="heroes_name">Nama Pahlawan</string>
+    <string name="detail">Detail</string>
+    <string name="hllo">Hello</string>
+    <string name="about_me">About Me</string>
+</resources>

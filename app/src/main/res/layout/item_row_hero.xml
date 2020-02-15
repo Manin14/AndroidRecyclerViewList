@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/id_item_foto"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        tools:src="@android:color/darker_gray">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/id_item_foto"
+        android:layout_toEndOf="@+id/id_item_foto">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_item_name"
+            android:layout_marginBottom="8dp"
+            tools:text="@string/heroes_name"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_item_detail"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="@string/detail">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+    </LinearLayout>
+
+</RelativeLayout>
